@@ -14,7 +14,7 @@ import { ImageIcon } from '@sanity/icons'
 
 export default defineConfig({
   basePath: '/studio',
-  title: "Franco Velastiqui Gallery",
+  title: "Gallery",
   icon: ImageIcon,
   projectId,
   dataset,

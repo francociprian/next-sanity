@@ -119,6 +119,7 @@ const NewSlider = () => {
                             25vw"
             /> */}
           {/* </motion.div> */}
+          <div><p>{IMAGES[activeImageIndex].id}</p></div>
         </AnimatePresence>
       </div>
     </div>

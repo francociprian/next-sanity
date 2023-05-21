@@ -16,6 +16,8 @@ const Home: NextPage = () => {
     refetchInterval: 60000,
   })
 
+  console.log(data)
+
 
   if (error) return <main className='flex min-h-screen flex-col items-center gap-24'><div>App Failed!</div></main>
 
