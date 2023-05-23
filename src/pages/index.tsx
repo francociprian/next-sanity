@@ -13,8 +13,8 @@ const Home: NextPage = () => {
       <NewSlider />
       <motion.div
         initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0, transition: { duration: 0.9, ease: "easeInOut", delay: 2 } }}
-        exit={{ scaleY: 1, transition: { duration: 0.9, ease: "easeInOut", delay: 2 } }}
+        animate={{ scaleY: 0, transition: { duration: 1.5, ease: "easeInOut", delay: 2.5 } }}
+        exit={{ scaleY: 1, transition: { duration: 1.5, ease: "easeInOut", delay: 2 } }}
         style={{ originY: isPresent ? 0 : 1 }}
         className="fixed top-0 left-0 right-0 bottom-0 z-[2] bg-gray-400 privacy-screen flex justify-center items-center"
       >
@@ -28,33 +28,20 @@ const Home: NextPage = () => {
               transition: { duration: 0.95, delay: 0.05, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
-            onAnimationComplete={() => setVisible(true)}
+            onAnimationComplete={() => setTimeout(() => {setVisible(true)}, 1000)}
           >
             Photographer
           </motion.span>
-          {/* <motion.span
-            initial={{ opacity: 0, x: -300 }}
-            animate={{
-              opacity: isVisible ? 0 : 1,
-              x: 0,
-              y: isVisible ? -60 : 0,
-              transition: { duration: 0.95, delay: 0.2, ease: [0.08, 0.82, 0.17, 1] }
-            }}
-            transition={{ duration: 3 }}
-            onAnimationComplete={() => setVisible(true)}
-          >
-            -
-          </motion.span> */}
           <motion.span
             initial={{ opacity: 0, x: -300 }}
             animate={{
               opacity: isVisible ? 0 : 1,
               x: 0,
               y: isVisible ? -45 : 0,
-              transition: { duration: 0.95, delay: 0.3, ease: [0.08, 0.82, 0.17, 1] }
+              transition: { duration: 0.95, delay: 0.4, ease: [0.08, 0.82, 0.17, 1] }
             }}
-            transition={{ duration: 3 }}
-            onAnimationComplete={() => setVisible(true)}
+            transition={{ duration: 3, delay: 4 }}
+            // onAnimationComplete={() => setVisible(true)}
           >
             John Doe
           </motion.span>
