@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               opacity: isVisible ? 0 : 1,
               x: 0,
               y: isVisible ? -60 : 0,
-              transition: { duration: 0.95, delay: 0.1, ease: [0.08, 0.82, 0.17, 1] }
+              transition: { duration: 0.95, delay: 0.05, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
             onAnimationComplete={() => setVisible(true)}
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
               opacity: isVisible ? 0 : 1,
               x: 0,
               y: isVisible ? -60 : 0,
-              transition: { duration: 0.95, delay: 0.1, ease: [0.08, 0.82, 0.17, 1] }
+              transition: { duration: 0.95, delay: 0.2, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
             onAnimationComplete={() => setVisible(true)}
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
               opacity: isVisible ? 0 : 1,
               x: 0,
               y: isVisible ? -60 : 0,
-              transition: { duration: 0.95, delay: 0.2, ease: [0.08, 0.82, 0.17, 1] }
+              transition: { duration: 0.95, delay: 0.3, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
             onAnimationComplete={() => setVisible(true)}
