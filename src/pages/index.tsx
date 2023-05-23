@@ -41,7 +41,6 @@ const Home: NextPage = () => {
               transition: { duration: 0.95, delay: 0.4, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3, delay: 4 }}
-            // onAnimationComplete={() => setVisible(true)}
           >
             John Doe
           </motion.span>
