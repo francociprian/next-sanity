@@ -18,13 +18,13 @@ const Home: NextPage = () => {
         style={{ originY: isPresent ? 0 : 1 }}
         className="fixed top-0 left-0 right-0 bottom-0 z-[2] bg-gray-400 privacy-screen flex justify-center items-center"
       >
-        <h3 className='flex gap-2'>
+        <h3 className='flex gap-4'>
           <motion.span
             initial={{ opacity: 0, x: -300 }}
             animate={{
               opacity: isVisible ? 0 : 1,
               x: 0,
-              y: isVisible ? -60 : 0,
+              y: isVisible ? -45 : 0,
               transition: { duration: 0.95, delay: 0.05, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           >
             Photographer
           </motion.span>
-          <motion.span
+          {/* <motion.span
             initial={{ opacity: 0, x: -300 }}
             animate={{
               opacity: isVisible ? 0 : 1,
@@ -44,13 +44,13 @@ const Home: NextPage = () => {
             onAnimationComplete={() => setVisible(true)}
           >
             -
-          </motion.span>
+          </motion.span> */}
           <motion.span
             initial={{ opacity: 0, x: -300 }}
             animate={{
               opacity: isVisible ? 0 : 1,
               x: 0,
-              y: isVisible ? -60 : 0,
+              y: isVisible ? -45 : 0,
               transition: { duration: 0.95, delay: 0.3, ease: [0.08, 0.82, 0.17, 1] }
             }}
             transition={{ duration: 3 }}
