@@ -53,16 +53,6 @@
 .slider-container .buttons button:active {
   transform: scale(0.85) skewY(-5deg) rotate(5deg);
 }
-/* @media only screen and (max-width: 375px) {
-  .slider-container .slider {
-    height: 600px;
-  }
-}
-@media only screen and (max-width: 325px) {
-  .slider-container .slider {
-    height: 500px;
-  }
-} */
 @media only screen and (max-width: 600px) {
   .slider-container .slider {
     height: 500px;
