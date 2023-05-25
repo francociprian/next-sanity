@@ -21,7 +21,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  will-change: transform, opacity;
+  /* will-change: transform, opacity; */
 }
 .slider-container .slider .image:hover {
   cursor: grab;
@@ -29,7 +29,7 @@
 .slider-container .slider .image:active {
   cursor: grabbing;
 }
-.slider-container .buttons {
+/* .slider-container .buttons {
   margin-top: 12px;
 }
 .slider-container .buttons button {
@@ -52,7 +52,7 @@
 }
 .slider-container .buttons button:active {
   transform: scale(0.85) skewY(-5deg) rotate(5deg);
-}
+} */
 @media only screen and (max-width: 600px) {
   .slider-container .slider {
     height: 500px;
