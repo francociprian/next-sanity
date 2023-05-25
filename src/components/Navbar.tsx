@@ -58,9 +58,18 @@ const Navbar = ({ menu, setMenu }: NavBarProps) => {
 	const togglemenu = () => {
 		setMenu(!menu);
 	};
-	
+	const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+		if (e.key === 'Escape'){
+		  setMenu(!menu)
+		  console.log('ESC')
+		}
+	  };	
+
 	return (
-		<header className="sticky top-0 inset-x-0 p-4 bg-neutral-900">
+		<header 
+			className="p-4 bg-neutral-900 " 								
+			onKeyDown={handleKeyDown}
+			tabIndex={0}>
 			<nav className="container mx-auto">
 				<motion.button
 					initial="hide"
@@ -231,6 +240,15 @@ const Navbar = ({ menu, setMenu }: NavBarProps) => {
 									}}
 									className="list-none flex justify-center gap-x-4"
 								>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
+									<li>
+										<div className="bg-white rounded-lg w-8 h-8"></div>
+									</li>
 									<li>
 										<div className="bg-white rounded-lg w-8 h-8"></div>
 									</li>
