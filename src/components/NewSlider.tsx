@@ -80,28 +80,37 @@ const NewSlider = () => {
   const isPresent = useIsPresent()
 
   return (
-    <div className="slider-container">
-      <div className="slider">
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.div
-            key={imageCount}
-            style={{
-              backgroundImage: `url(${IMAGES[activeImageIndex].imageSrc})`
-            }}
-            custom={direction}
-            variants={sliderVariants}
-            initial="incoming"
-            animate="active"
-            exit="exit"
-            transition={sliderTransition}
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            className="image"
-          />
-        </AnimatePresence>
-      </div>
+    <div 
+      className="h-[calc(100vh-43px)] w-full flex flex-col gap-2 justify-center items-center">
+      <div 
+        className="w-[500px] h-[650px] bg-contain bg-no-repeat bg-center"
+        style={{backgroundImage: `url(${IMAGES[activeImageIndex].imageSrc})`}}  
+      />
     </div>
   );
 };
 
 export default NewSlider;
+
+
+    // <div className="slider-container">
+    //   <div className="slider">
+    //     <AnimatePresence initial={false} custom={direction}>
+    //       <motion.div
+    //         key={imageCount}
+    //         style={{
+    //           backgroundImage: `url(${IMAGES[activeImageIndex].imageSrc})`
+    //         }}
+    //         custom={direction}
+    //         variants={sliderVariants}
+    //         initial="incoming"
+    //         animate="active"
+    //         exit="exit"
+    //         transition={sliderTransition}
+    //         dragConstraints={{ left: 0, right: 0 }}
+    //         dragElastic={1}
+    //         className="image"
+    //       />
+    //     </AnimatePresence>
+    //   </div>
+    // </div>
