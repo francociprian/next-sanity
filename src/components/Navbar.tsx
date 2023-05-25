@@ -241,22 +241,16 @@ const Navbar = ({ menu, setMenu }: NavBarProps) => {
 									className="list-none flex justify-center gap-x-4"
 								>
 									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
+										<div className="bg-white rounded-md w-6 h-6"></div>
 									</li>
 									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
+										<div className="bg-white rounded-md w-6 h-6"></div>
 									</li>
 									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
+										<div className="bg-white rounded-md w-6 h-6"></div>
 									</li>
 									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
-									</li>
-									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
-									</li>
-									<li>
-										<div className="bg-white rounded-lg w-8 h-8"></div>
+										<div className="bg-white rounded-md w-6 h-6"></div>
 									</li>
 								</motion.ul>
 							</motion.div>
